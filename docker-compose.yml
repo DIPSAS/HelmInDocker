@@ -2,7 +2,7 @@ version: '3.3'
 
 services:
   helm:
-    image: hansehe/helm:${VERSION}
+    image: dipsas/helm:${VERSION}
     build:
       context: .
       dockerfile: Dockerfile
