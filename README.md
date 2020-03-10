@@ -20,7 +20,9 @@ docker run -it -v $PWD/charts/:/charts -w /charts dipsas/helm kubectl config vie
 ```
 
 ### Install chart in docker-desktop kubernetes
-Change kubectl config in [./charts/.kube/config](./charts/.kube/config).
+Change kubectl config in [./charts/.kube/config](./charts/.kube/config) with your own kube config.
+Usually you can find your personal kube config with docker desktop on windows at:
+- C:\\Users\\my-user\\.kube\\config
 ```
 docker run -it -v $PWD/charts/:/charts -w /charts dipsas/helm helm install my-helm-chart ./my-helm-chart
 ```
